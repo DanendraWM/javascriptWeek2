@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Week 2</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="form">
+            <form onsubmit="return kirim(event)" method="POST" id="form">
+                <div class="form-text">
+                    <p class="title-form">Form rekrutasi</p>
+                </div>
+                <div class="form-group">
+                    <label for="fullname" class="input-label">Fullname</label>
+                    <input type="text" class="form-control" name="fullname" placeholder="Masukkan nama">
+                    <label id="counter-fullname" class="alert"></label>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="input-label">Email</label>
+                    <input type="text" class="form-control" name="email" placeholder="Masukkan Email">
+                    <label id="counter-email" class="alert"></label>
+                </div>
+                <div class="form-group">
+                    <label for="nomor" class="input-label">Nomor Telepon</label>
+                    <input type="text" class="form-control" name="nomor" placeholder="Masukkan nama">
+                    <label id="counter-nomor" class="alert"></label>
+                </div>
+                <div class="form-group">
+                    <label for="lowongan" class="input-label">lowongan</label>
+                    <select class="form-control" name="lowongan" id="selectLowongan" onchange="myLowongan()">
+                    </select>
+                    <label id="counter-lowongan" class="alert"></label>
+                </div>
+                <div class="form-group">
+                    <label for="Posisi" class="input-label">Posisi</label>
+                    <select class="form-control" name="posisi" id="selectPosisi">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn" id="btn">Kirim</button>
+                </div>
+            </form>
+        </div>
+        <div class="hasil">
+            <p class="title-hasil" id="title">Anda belum isi data</p>
+            <hr>
+            <div class="form-group">
+                <label class="input-label">Fullname</label>
+                <span id="fullname">NULL</span>
+            </div>
+            <div class="form-group">
+                <label class="input-label">Email</label>
+                <span id="email">NULL</span>
+            </div>
+            <div class="form-group">
+                <label class="input-label">Nomor Telepon</label>
+                <span id="nomor">NULL</span>
+            </div>
+            <div class="form-group">
+                <label class="input-label">Lowongan</label>
+                <span id="lowongan">NULL</span>
+            </div>
+            <div class="form-group">
+                <label class="input-label">Posisi</label>
+                <span id="posisi">NULL</span>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
